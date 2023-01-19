@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+    max-height: 100vh;
+    gap: 2rem;
+    justify-content: space-between;
+
+}
+
+.harmburger {
+    position: fixed;
+    left: 0;
+    padding: 1rem;
+    display: none;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    padding: 0 3rem;
+    justify-content: center;
+
+}
+
+.head {
+    display: flex;
+    font-weight: 900;
+    font-size: 4em;
+    color: #212529;
+}
+
+.about {
+    text-align: justify;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+
+
+.right span .profile_img {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    height: 100%;
+    max-height: 700px;
+    margin: 0 auto;
+
+}
+
+
+/* DESKTOP */
+@media (min-width: 1281px) {
+    /* .right span .profile_img {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        max-width: 500px;
+
+    } */
+
+}
+
+/* Device = Laptops, Desktops  */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {}
+}
+
+/* Device = Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .container {}
+}
+
+/* Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape)
+Screen = B/w 481px to 767px*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .right span .profile_img {
+        max-width: 300px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .harmburger {
+        display: flex;
+    }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait)
+Screen = B/w 320px to 479px*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .harmburger {
+        display: flex;
+    }
+}

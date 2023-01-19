@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    position: fixed;
+    left: 0;
+    background: black;
+    color: white;
+    z-index: 20;
+    width: 200px;
+    height: 100vh;
+    padding: 10px;
+    transform: translateX(-100%);
+}
+
+.show-SideNav {}
+
+
+.container ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 2rem;
+    padding: 0;
+
+}
+
+.container ul li {
+
+    font-weight: normal;
+    display: flex;
+
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: rgb(170, 168, 168);
+    transition: all 300ms ease;
+}
+
+.container ul li a:hover {
+    color: white;
+}
+
+.active a {
+    color: white !important;
+}
+
+.close {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+}
+
+
+/* Device = Laptops, Desktops  */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {}
+}
+
+/* Device = Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .container {}
+}
+
+/* Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape)
+Screen = B/w 481px to 767px*/
+@media (min-width: 481px) and (max-width: 767px) {
+    /* .container {
+        display: none;
+    } */
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait)
+Screen = B/w 320px to 479px*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* .container {
+        display: none;
+    } */
+
+
+}

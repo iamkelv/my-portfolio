@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    margin: 0 auto;
+    max-width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 1rem;
+}
+
+.get_intouch {
+    display: flex;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.buttom {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    gap: 3rem;
+    max-width: 60%;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.title {
+    display: flex;
+    font-weight: bold;
+}
+
+.desc {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.link a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+.form_container {
+    display: flex;
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+
+.name,
+.email,
+.message {
+    display: flex;
+    width: 100%;
+    outline: none;
+    padding: 1rem;
+    background: black;
+    color: white;
+    border: 1px solid gainsboro;
+    transition: all 300ms ease;
+}
+
+.name::placeholder,
+.email::placeholder,
+.message::placeholder {
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+
+.name:focus,
+.email:focus,
+.message:focus {
+    border: 1px solid rgb(58, 123, 170);
+}
+
+.submit_wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    padding: 0 1rem;
+    justify-content: flex-end;
+}
+
+.submit_wrapper button {
+    display: flex;
+    padding: 0.7rem 3rem;
+    outline: none;
+    background: white;
+}
+
+
+/* Device = Laptops, Desktops  */
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* Device = Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Device = Tablets, Ipads (landscape)
+  Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape)
+Screen = B/w 481px to 767px*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .buttom {
+        flex-direction: column;
+    }
+}
+
+/* Device = Most of the Smartphones Mobiles (Portrait)
+Screen = B/w 320px to 479px*/
+
+@media (min-width: 320px) and (max-width: 480px) {}
